@@ -10,10 +10,12 @@ module.exports = {
         customOrange: '#FFF4DE',
         customGreen: '#DCFCE7',
         customPurple: '#F3E8FF',
+        customBlue: '#4079ED',
       },
       fontFamily: {
         tkt: ['tkt'],
         tktMedium: ['tktMedium'],
+        PoppinsRegular: ['PoppinsRegular'],
       },
     },
   },

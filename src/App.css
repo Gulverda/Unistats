@@ -12,3 +12,16 @@
   font-family: "PoppinsRegular";
   src: url("/public/font/Poppins-Regular.ttf") format("truetype");
 }
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.heartbeat {
+  animation: heartbeat 0.8s infinite alternate;
+}

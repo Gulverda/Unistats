@@ -13,7 +13,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <h1>
         <svg
-          width="207"
+          width="170"
           height="56"
           viewBox="0 0 207 56"
           fill="none"

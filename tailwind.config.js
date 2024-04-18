@@ -1,5 +1,3 @@
-// tailwind.config.js
-
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -18,13 +16,17 @@ module.exports = {
         PoppinsRegular: ['PoppinsRegular'],
       },
       width: {
-        'default': '45rem',   // Custom width of 18rem
-        '84': '21rem',   // Custom width of 21rem
+        'default': '45rem',
+        '84': '21rem',
       },
       height: {
-        '72': '18rem',   // Custom height of 18rem
-        '84': '21rem',   // Custom height of 21rem
-      }
+        '72': '18rem',
+        '348': '21.75rem', 
+      },
+      fontSize: {
+        'customFontSize': '1.5rem',
+        '7xl': '5rem',
+      },
     },
   },
   plugins: [],

@@ -17,12 +17,14 @@ const Sidebar = () => {
 
 
   return (
+    <>
+      <div className="burger-menu" onClick={toggleSidebar} style={{position: "absolute", right: "0"}}>
+    <div className="bar"></div>
+    <div className="bar"></div>
+    <div className="bar"></div>
+  </div>
     <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
-      <div className="burger-menu" onClick={toggleSidebar}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div>
+
 
       <h1>
         <svg
@@ -87,7 +89,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/"
-            activeClassName="active"
+            activeclassname="active"
             onClick={() => handleNavLinkClick("home")}
           >
             <svg
@@ -125,7 +127,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/about"
-            activeClassName="active"
+            activeclassname="active"
             onClick={() => handleNavLinkClick("about")}
           >
             <svg
@@ -146,7 +148,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/services"
-            activeClassName="active"
+            activeclassname="active"
             onClick={() => handleNavLinkClick("services")}
           >
             <svg
@@ -157,8 +159,8 @@ const Sidebar = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M17.25 1.13636C17.25 0.508767 16.7351 0 16.1 0C15.4649 0 14.95 0.508767 14.95 1.13636V2.27273H8.05V1.13636C8.05 0.508767 7.53513 0 6.9 0C6.26487 0 5.75 0.508767 5.75 1.13636V2.27273H3.45C1.54462 2.27273 0 3.79903 0 5.68182V21.5909C0 23.4737 1.54462 25 3.45 25H19.55C21.4554 25 23 23.4737 23 21.5909V5.68182C23 3.79903 21.4554 2.27273 19.55 2.27273H17.25V1.13636ZM20.7 9.09091V5.68182C20.7 5.05422 20.1851 4.54545 19.55 4.54545H17.25V5.68182C17.25 6.30941 16.7351 6.81818 16.1 6.81818C15.4649 6.81818 14.95 6.30941 14.95 5.68182V4.54545H8.05V5.68182C8.05 6.30941 7.53513 6.81818 6.9 6.81818C6.26487 6.81818 5.75 6.30941 5.75 5.68182V4.54545H3.45C2.81487 4.54545 2.3 5.05422 2.3 5.68182V9.09091H20.7ZM2.3 11.3636H20.7V21.5909C20.7 22.2185 20.1851 22.7273 19.55 22.7273H3.45C2.81487 22.7273 2.3 22.2185 2.3 21.5909V11.3636Z"
                 fill="#737791"
               />
@@ -169,7 +171,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/contact"
-            activeClassName="active"
+            activeclassame="active"
             onClick={() => handleNavLinkClick("contact")}
           >
             <svg
@@ -180,8 +182,8 @@ const Sidebar = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M10 1C6.96243 1 4.5 3.46243 4.5 6.5C4.5 9.53757 6.96243 12 10 12C13.0376 12 15.5 9.53757 15.5 6.5C15.5 3.46243 13.0376 1 10 1ZM6.5 6.5C6.5 4.567 8.067 3 10 3C11.933 3 13.5 4.567 13.5 6.5C13.5 8.433 11.933 10 10 10C8.067 10 6.5 8.433 6.5 6.5Z"
                 fill="#737791"
               />
@@ -198,26 +200,26 @@ const Sidebar = () => {
                 fill="#737791"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M10 1C6.96243 1 4.5 3.46243 4.5 6.5C4.5 9.53757 6.96243 12 10 12C13.0376 12 15.5 9.53757 15.5 6.5C15.5 3.46243 13.0376 1 10 1ZM6.5 6.5C6.5 4.567 8.067 3 10 3C11.933 3 13.5 4.567 13.5 6.5C13.5 8.433 11.933 10 10 10C8.067 10 6.5 8.433 6.5 6.5Z"
                 stroke="#737791"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
               <path
                 d="M16.5 1C15.9477 1 15.5 1.44772 15.5 2C15.5 2.55228 15.9477 3 16.5 3C18.433 3 20 4.567 20 6.5C20 8.433 18.433 10 16.5 10C15.9477 10 15.5 10.4477 15.5 11C15.5 11.5523 15.9477 12 16.5 12C19.5376 12 22 9.53757 22 6.5C22 3.46243 19.5376 1 16.5 1Z"
                 stroke="#737791"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
               <path
                 d="M20.0837 15.0157C20.3048 14.5096 20.8943 14.2786 21.4004 14.4997C23.5174 15.4246 25 17.538 25 20V22C25 22.5523 24.5523 23 24 23C23.4477 23 23 22.5523 23 22V20C23 18.3613 22.0145 16.9505 20.5996 16.3324C20.0935 16.1113 19.8625 15.5217 20.0837 15.0157Z"
                 stroke="#737791"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
               <path
                 d="M7 14C3.68629 14 1 16.6863 1 20V22C1 22.5523 1.44772 23 2 23C2.55228 23 3 22.5523 3 22V20C3 17.7909 4.79086 16 7 16H13C15.2091 16 17 17.7909 17 20V22C17 22.5523 17.4477 23 18 23C18.5523 23 19 22.5523 19 22V20C19 16.6863 16.3137 14 13 14H7Z"
                 stroke="#737791"
-                stroke-linecap="round"
+                strokeLinecap="round"
               />
             </svg>{" "}
             ჩვენს შესახებ
@@ -226,7 +228,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/FAQ"
-            activeClassName="active"
+            activeclassname="active"
             onClick={() => handleNavLinkClick("FAQ")}
           >
             <svg
@@ -246,6 +248,7 @@ const Sidebar = () => {
         </li>
       </ul>
     </div>
+    </>
   );
 };
 

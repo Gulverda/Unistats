@@ -140,10 +140,6 @@ li a {
   }
 }
 
-@media screen and (max-width: 1024px) {
-
-}
-
 @media screen and (max-width: 768px) {
   .sidebar {
     width: 100%;
@@ -192,6 +188,7 @@ li a {
     background-color: #fff;
     transition: left 0.3s ease;
   }
+
   .burger-menu {
     display: block; /* Show burger menu for smaller screens */
     cursor: pointer;

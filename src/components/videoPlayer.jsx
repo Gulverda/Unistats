@@ -7,14 +7,14 @@ export default function VideoPlayer() {
   
 
   return (
-    <div className="relative">
+    <div className=" for-resp relative">
       <video controls className="absolute top-0 left-0 w-full h-full object-cover rounded-xl z-0 hidden">
         <source src={video} type="video/mp4" />
       </video>
       <img
         src={photo}
         alt="Banner Photo"
-        className="w-default h-auto bg-cover rounded-xl z-10"
+        className="banner-photo h-auto bg-cover rounded-xl z-10"
       />
       <h1 
       className="font-tkt text-white absolute top-0 left-0 z-10 py-12 px-7 text-2xl">

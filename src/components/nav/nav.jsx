@@ -9,8 +9,21 @@ const Sidebar = () => {
     setActiveLink(link);
   };
 
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+      <div className="burger-menu" onClick={toggleSidebar}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+
       <h1>
         <svg
           width="170"

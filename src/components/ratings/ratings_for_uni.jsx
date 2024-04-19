@@ -7,7 +7,7 @@ const Ratings_uni = () => {
       className="rating"
       style={{
         height: "300px",
-        width: "45rem",
+        width: "100%",
         background: "red",
         borderRadius: "16px",
       }}

@@ -12,8 +12,8 @@ export default function AnnualStats() {
         <h4 className="font-tkt text-gray-700">სტატისტიკა</h4>
       </div>
 
-      <div className="flex gap-6">
-        <div className="w-36 h-34 px-4 py-3 bg-customPink rounded-xl flex flex-col gap-3">
+      <div className="for-grid flex gap-6">
+        <div className="child-for-grid w-36 h-34 px-4 py-3 bg-customPink rounded-xl flex flex-col gap-3">
           <img className="w-9 h-9 " src={icon} alt="" srcSet="" />
           <div className="flex flex-col gap-2">
             <h2 className="font-PoppinsRegular font-semibold text-xl">250k+</h2>
@@ -24,7 +24,7 @@ export default function AnnualStats() {
           </div>
         </div>
 
-        <div className="w-36 h-34 px-4 py-3 bg-customOrange rounded-xl flex flex-col gap-3">
+        <div className="child-for-grid w-36 h-34 px-4 py-3 bg-customOrange rounded-xl flex flex-col gap-3">
           <img className="w-9 h-9 " src={icon1} alt="" srcSet="" />
           <div className="flex flex-col gap-2">
             <h2 className="font-PoppinsRegular font-semibold text-xl">42k+</h2>
@@ -37,7 +37,7 @@ export default function AnnualStats() {
           </div>
         </div>
 
-        <div className="w-36 h-34 px-4 py-3 bg-customGreen rounded-xl flex flex-col gap-3">
+        <div className="child-for-grid w-36 h-34 px-4 py-3 bg-customGreen rounded-xl flex flex-col gap-3">
           <img className="w-9 h-9 " src={icon2} alt="" srcSet="" />
           <div className="flex flex-col gap-2">
             <h2 className="font-PoppinsRegular font-semibold text-xl">61</h2>
@@ -50,7 +50,7 @@ export default function AnnualStats() {
           </div>
         </div>
 
-        <div className="w-36 h-34 px-4 py-3 bg-customPurple rounded-xl flex flex-col gap-3">
+        <div className="child-for-grid w-36 h-34 px-4 py-3 bg-customPurple rounded-xl flex flex-col gap-3">
           <img className="w-9 h-9 " src={icon3} alt="" srcSet="" />
           <div className="flex flex-col gap-0.5">
             <h2 className="font-PoppinsRegular font-semibold text-xl">12k+</h2>

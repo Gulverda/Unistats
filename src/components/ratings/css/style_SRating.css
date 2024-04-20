@@ -1,0 +1,78 @@
+.rating_div {
+    background-color: #FFFFFF;
+    width: 100%;
+    min-width: 340px;
+    height: 542px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    box-shadow: 0px 4px 10px 0px #E1EAFF;
+}
+.forshadow{
+    box-shadow: 0px 40px 58px -45px #7090B0;
+
+}
+.rating_div p{
+    font-family: 'tktMedium';
+    font-size: 20px;
+    font-weight: 500;
+}
+.rating_div .top{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+.rating_div button {
+    font-family: 'tktMedium';
+    font-weight: 800;
+    font-size: 13px;
+    color: #4318FF;
+    border-radius: 20px;
+    background-color: #F4F7FE;
+    line-height: 24px;
+    padding: 5px 15px 5px 15px;
+}
+.rating_div table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.theads{
+    color: #A3AED0;
+    font-family: 'tkt';
+    font-size: 15px;
+}
+.rating_div table th {
+    padding: 10px;
+    text-align: center;
+}
+  
+.rating_div table td {
+    padding: 10px;
+}
+.rating_div table .uni {
+    text-align: center;
+    width: 25%;
+    padding-right: 40px;
+}
+.rating_div table .gpa {
+    width: 25%;
+    text-align: right;
+    padding-right: 40px;
+} 
+.rating_div .name {
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    margin-left: 20px;
+}
+.rating_div .name img{
+    width: 30px;
+    height: 30px;
+}
+.rating_div .contents{
+    display: flex;
+}

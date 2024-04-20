@@ -4,6 +4,7 @@ import VideoPlayer from "./videoPlayer.jsx";
 import Map from "./Map.jsx";
 import Sidebar from "./nav/nav.jsx";
 import Ratings_uni from "./ratings/ratings_for_uni.jsx";
+import Ratings_for_student from "./ratings/ratings_for_student.jsx";
 
 export default function Home() {
   return (
@@ -56,9 +57,11 @@ export default function Home() {
               display: "flex",
               flexDirection: "column",
               // justifyContent: "center",
-              alignItems: "center"
+              alignItems: "center",
+              gap: "25px"
             }}
           >
+            <Ratings_for_student/>
             <Map/>
           </div>
         </div>

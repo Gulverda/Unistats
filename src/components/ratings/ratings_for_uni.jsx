@@ -8,11 +8,10 @@ const Ratings_uni = () => {
       style={{
         height: "300px",
         width: "100%",
-        background: "red",
+        background: "white",
         borderRadius: "16px",
       }}
     >
-      hello world
     </div>
   );
 };

@@ -5,26 +5,27 @@ import Map from "./Map.jsx";
 import Sidebar from "./nav/nav.jsx";
 import Ratings_uni from "./ratings/ratings_for_uni.jsx";
 import Ratings_for_student from "./ratings/ratings_for_student.jsx";
+import Calendar from "./calendar.jsx";
 
 export default function Home() {
   return (
     <div className=" h-screen bg-customGray flex flex-row">
       <div
         className="absolute font-tktMedium flex items-center"
-        style={{ width: "100%", height: "70px", background: "white" }}
+        style={{ width: "100%", height: "70px", background: "white", position: "fixed"}}
       >
         <h1 className="mx-72 text-customFontSize">მთავარი</h1>
       </div>
-      <div className=" flex">
-        <Sidebar />
+      <div className="flex">
+        <Sidebar/>
       </div>
-      <div style={{display: "flex", justifyContent: "center", width: "100%"}}>
+      <div style={{display: "flex", justifyContent: "center", width: "100%", height: "1080px"}}>
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           // paddingRight: "180px",
-          paddingTop: "120px",
+          paddingTop: "100px",
           maxWidth: "1440px",
           width: "100%"
         }}
@@ -61,6 +62,7 @@ export default function Home() {
               gap: "25px"
             }}
           >
+            <Calendar/>
             <Ratings_for_student/>
             <Map/>
           </div>

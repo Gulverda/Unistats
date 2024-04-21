@@ -2,11 +2,11 @@
     background-color: #FFFFFF;
     width: 100%;
     min-width: 340px;
-    height: 542px;
+    height: 420px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1px;
     box-sizing: border-box;
     padding-bottom: 20px;
     box-shadow: 0px 4px 10px 0px #E1EAFF;
@@ -43,7 +43,7 @@
 .theads{
     color: #A3AED0;
     font-family: 'tkt';
-    font-size: 15px;
+    font-size: 12px;
 }
 .rating_div table th {
     padding: 10px;
@@ -52,6 +52,7 @@
   
 .rating_div table td {
     padding: 10px;
+    font-size: 12px;
 }
 .rating_div table .uni {
     text-align: center;
@@ -70,8 +71,8 @@
     margin-left: 20px;
 }
 .rating_div .name img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 .rating_div .contents{
     display: flex;

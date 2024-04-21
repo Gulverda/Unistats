@@ -5,6 +5,7 @@ import Map from "./Map.jsx";
 import Sidebar from "./nav/nav.jsx";
 import Ratings_uni from "./ratings/ratings_for_uni.jsx";
 import Ratings_for_student from "./ratings/ratings_for_student.jsx";
+import Calendar from "./calendar/Calendar.jsx";
 
 export default function Home() {
   return (
@@ -58,9 +59,10 @@ export default function Home() {
               flexDirection: "column",
               // justifyContent: "center",
               alignItems: "center",
-              gap: "25px"
+              gap: "25px",
             }}
           >
+            <Calendar/>
             <Ratings_for_student/>
             <Map/>
           </div>

@@ -91,18 +91,10 @@ const Ratings_for_student = () => {
           <tr className="contents">
             <td className="name">
               <img src={img7} />
-              jaba.aggggni
+              Iura.Iura_123
             </td>
             <td className="uni">GAU</td>
-            <td className="gpa">4.3</td>
-          </tr>
-          <tr className="contents">
-            <td className="name">
-              <img src={img8} />
-              jaba.aggggni
-            </td>
-            <td className="uni">GAU</td>
-            <td className="gpa">4.3</td>
+            <td className="gpa">13</td>
           </tr>
         </tbody>
       </table>

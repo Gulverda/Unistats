@@ -42,6 +42,14 @@ const Ratings_for_student = () => {
         <tbody>
           <tr className="contents">
             <td className="name">
+              <img src={img7} />
+              Iuraa.TopG
+            </td>
+            <td className="uni">GAU</td>
+            <td className="gpa">13.00</td>
+          </tr>
+          <tr className="contents">
+            <td className="name">
               <img src={img1} />
               jaba.aggggni
             </td>
@@ -88,22 +96,7 @@ const Ratings_for_student = () => {
             <td className="uni">GAU</td>
             <td className="gpa">4.3</td>
           </tr>
-          <tr className="contents">
-            <td className="name">
-              <img src={img7} />
-              jaba.aggggni
-            </td>
-            <td className="uni">GAU</td>
-            <td className="gpa">4.3</td>
-          </tr>
-          <tr className="contents">
-            <td className="name">
-              <img src={img8} />
-              jaba.aggggni
-            </td>
-            <td className="uni">GAU</td>
-            <td className="gpa">4.3</td>
-          </tr>
+         
         </tbody>
       </table>
     </div>

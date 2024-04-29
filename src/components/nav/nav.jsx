@@ -15,17 +15,18 @@ const Sidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
-
   return (
     <>
-      <div className="burger-menu" onClick={toggleSidebar} style={{position: "absolute", right: "0"}}>
-    <div className="bar"></div>
-    <div className="bar"></div>
-    <div className="bar"></div>
-  </div>
-    <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
-
-
+      <div
+        className="burger-menu"
+        onClick={toggleSidebar}
+        style={{ position: "absolute", right: "0" }}
+      >
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
       <h1>
         <svg
           width="170"
@@ -88,7 +89,7 @@ const Sidebar = () => {
       <ul>
         <li>
           <NavLink
-            to="/"
+            to="/home"
             activeclassname="active"
             onClick={() => handleNavLinkClick("home")}
           >
@@ -147,7 +148,7 @@ const Sidebar = () => {
         </li>
         <li>
           <NavLink
-            to="/services"
+            to="/calendar"
             activeclassname="active"
             onClick={() => handleNavLinkClick("services")}
           >
@@ -247,7 +248,7 @@ const Sidebar = () => {
           </NavLink>
         </li>
       </ul>
-    </div>
+      </div>
     </>
   );
 };

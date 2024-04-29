@@ -202,3 +202,21 @@ li a {
     margin: 5px 0;
   }
 }
+
+.faq-container {
+  display: flex;
+}
+
+.faq-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.calendar_container{
+  display: flex;
+}
+
+.calendar_content{
+  flex: 1;
+  padding: 20px;
+}

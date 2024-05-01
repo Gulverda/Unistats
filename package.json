@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@progress/kendo-react-dateinputs": "^7.4.0",
     "@progress/kendo-react-dropdowns": "^7.4.0",
     "@progress/kendo-react-scheduler": "^7.4.0",

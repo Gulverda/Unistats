@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../src/App.css";
+import "./css/style_for_uniR.css";
 
 const Ratings_uni = () => {
   return (

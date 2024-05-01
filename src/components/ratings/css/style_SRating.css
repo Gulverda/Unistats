@@ -82,8 +82,3 @@
 .theads th {
     text-align: left;
 }
-
-.rating_div button:hover {
-    background-color: #d1edff;
-    transition: 0.2s ease-in-out;
-}

@@ -27,8 +27,8 @@ const Ratings_for_student = () => {
         <table>
           <thead>
             <tr className="theads">
-              <th>სტუდენტი</th>
-              <th>უნივერსიტეტი</th>
+              <th style={{width: "45%"}}>სტუდენტი</th>
+              <th style={{width: "35%"}}>უნივერსიტეტი</th>
               <th>GPA</th>
             </tr>
           </thead>

@@ -6,13 +6,13 @@ import icon3 from "../assets/Icon (3).png";
 
 export default function AnnualStats() {
   return (
-    <div className="w-auto max-w-full h-auto py-8 px-8 bg-white rounded-2xl flex flex-col gap-8">
+    <div className="w-auto max-w-full h-auto py-5 px-5 bg-white rounded-2xl flex flex-col gap-5">
       <div className="flex flex-col gap-0.5">
         <h1 className="font-tktMedium">2024 წლის მონაცემები</h1>
         <h4 className="font-tkt text-gray-700">სტატისტიკა</h4>
       </div>
 
-      <div className="for-grid flex gap-6">
+      <div className="for-grid flex gap-9">
         <div className="child-for-grid w-36 h-34 px-4 py-3 bg-customPink rounded-xl flex flex-col gap-3">
           <img className="w-9 h-9 " src={icon} alt="" srcSet="" />
           <div className="flex flex-col gap-2">

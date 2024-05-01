@@ -6,10 +6,12 @@ const Ratings_uni = () => {
     <div
       className="rating"
       style={{
-        
+        height: "300px",
+        width: "100%",
+        background: "white",
+        borderRadius: "16px",
       }}
     >
-      hello world
     </div>
   );
 };

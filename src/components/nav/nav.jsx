@@ -26,7 +26,7 @@ const Sidebar = () => {
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
-      <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+      <div className={`sidebar ${sidebarOpen ? "open" : ""}`} style={{position: "fixed"}}>
       <h1>
         <svg
           width="170"

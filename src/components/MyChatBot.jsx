@@ -22,7 +22,7 @@ const MyChatBot = () => {
   useEffect(() => {
     const chatHeaderButton = document.querySelector(".rcb-chat-bot button");
     if (chatHeaderButton) {
-      chatHeaderButton.style.backgroundColor = "transparent";
+      chatHeaderButton.style.backgroundColor = "#ffffff";
       chatHeaderButton.style.color = "#ffffff";
     }
   }, []);
@@ -67,7 +67,7 @@ const MyChatBot = () => {
   };
 
   return (
-    <div className="chatbot-container" style={{ width: "400px", height: "500px" }}>
+    <div className="chatbot-container">
       <ChatBot flow={flow} />
     </div>
   );

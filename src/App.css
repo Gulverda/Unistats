@@ -223,13 +223,9 @@ li a {
 }
 
 .chatbot-container .rcb-window-open{
-  width: 200px;}
-
-/* MyChatBot.css */
-.chatbot-container div:nth-child(43){
-  width: 400px !important; /* Set your desired width */
-  height: 500px; /* Set your desired height */
+  width: 200px;
 }
+
 
 .rcb-chat-bot button{
   background-image: url(../src/assets/Dark\ Version.png) !important;

@@ -16,7 +16,7 @@ const Sidebar = () => {
   };
 
   return (
-    <di>
+    <div>
       <div
         className="burger-menu"
         onClick={toggleSidebar}
@@ -29,6 +29,7 @@ const Sidebar = () => {
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`} style={{position: "fixed"}}>
   
       <ul style={{marginTop: "80px", zIndex: "2"}}>
+      <ul/>
         <li>
           <NavLink
             to="/home"
@@ -191,7 +192,7 @@ const Sidebar = () => {
         </li>
       </ul>
       </div>
-    </di>
+    </div>
   );
 };
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Sidebar from "../nav/nav"; // Make sure the import path is correct
-import "../ratings/css/FAQ.css"; // Make sure the import path is correct
+import Sidebar from "../../nav/nav"; // Make sure the import path is correct
+import "./FAQ.css";
 
 function FAQ() {
     const faqData = [

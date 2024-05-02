@@ -7,8 +7,6 @@ import img4 from "../../assets/profile_imgs/Rectangle 346-2.svg";
 import img5 from "../../assets/profile_imgs/Rectangle 346-3.svg";
 import img6 from "../../assets/profile_imgs/Rectangle 346-4.svg";
 import img7 from "../../assets/profile_imgs/Rectangle 346-5.svg";
-import img8 from "../../assets/profile_imgs/Rectangle 346.svg";
-
 
 const Ratings_for_student = () => {
   return (
@@ -29,8 +27,8 @@ const Ratings_for_student = () => {
         <table>
           <thead>
             <tr className="theads">
-              <th>სტუდენტი</th>
-              <th>უნივერსიტეტი</th>
+              <th style={{width: "45%"}}>სტუდენტი</th>
+              <th style={{width: "35%"}}>უნივერსიტეტი</th>
               <th>GPA</th>
             </tr>
           </thead>
@@ -82,21 +80,12 @@ const Ratings_for_student = () => {
           </tr>
           <tr className="contents">
             <td className="name">
-              <img src={img5} />
-              jaba.aggggni
-            </td>
-            <td className="uni">GAU</td>
-            <td className="gpa">4.3</td>
-          </tr>
-          <tr className="contents">
-            <td className="name">
               <img src={img6} />
               jaba.aggggni
             </td>
             <td className="uni">GAU</td>
             <td className="gpa">4.3</td>
           </tr>
-         
         </tbody>
       </table>
     </div>

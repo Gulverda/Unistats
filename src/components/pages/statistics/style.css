@@ -4,6 +4,7 @@
 .containeri {
     display: flex;
     align-items: stretch;
+    padding-left: 250px;
 }
 .header {
     width: 100%;

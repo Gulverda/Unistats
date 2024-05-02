@@ -1,3 +1,7 @@
+*{
+  font-family: tkt;
+}
+
 @font-face {
   font-family: "tkt";
   src: url("/public/font/TKT-Regular.ttf") format("truetype");
@@ -234,4 +238,15 @@ li a {
 .rcb-badge{
   padding: 3px 10px !important;
   background-color: #50df4c !important;
+}
+
+@media screen and (max-width: 1025px){
+  .style_for_home, 
+  .containeri{
+    padding-left: 0 !important;
+  }
+
+  .calendar_content{
+    padding-left: 20px !important;
+  }
 }

@@ -6,6 +6,7 @@ const MyChatBot = () => {
     useEffect(() => {
         const chatHeader = document.querySelector(".rcb-chat-header h3");
         if (chatHeader) {
+          chatHeader.style.fontFamily = "tkt";
           chatHeader.textContent = "UniStats Bot"; // Change the text content of h3
         }
       }, []);
@@ -14,14 +15,16 @@ const MyChatBot = () => {
     const chatTooltip = document.querySelector(".rcb-chat-tooltip");
     if (chatTooltip) {
       chatTooltip.style.color = "#4318ff";
+      chatTooltip.style.fontFamily = "tkt";
       chatTooltip.style.backgroundColor = "#f4f7fe";
-      chatTooltip.innerHTML = "Let me help you!";
+      chatTooltip.innerHTML = "გინდა დაგეხმარო?";
     }
   }, []);
 
   useEffect(() => {
     const chatHeaderButton = document.querySelector(".rcb-chat-bot button");
     if (chatHeaderButton) {
+      chatHeaderButton.style.fontFamily = "tkt";
       chatHeaderButton.style.backgroundColor = "#ffffff";
       chatHeaderButton.style.color = "#ffffff";
     }
@@ -29,15 +32,18 @@ const MyChatBot = () => {
 
   const flow = {
     start: {
-      message: "Hello, I am a UniStats Bot!",
-      options: ["Calendar", "Github", "LinkedIn"],
+      message: "გამარჯობა! მე ვარ ჩათბოტი",
+      options: ["დახმარება", "კალენდარი", "Github", "LinkedIn"],
       path: "process_options"
     },
     process_options: {
       message: (params) => {
         let link = "";
         switch (params.userInput) {
-          case "Calendar":
+          case "დახმარება":
+            return "გიგზავნით მეილს: ggdln@gau.edu.ge";
+            break;
+          case "კალენდარი":
             link = "http://localhost:3000/calendar";
             break;
           case "Github":
@@ -46,22 +52,23 @@ const MyChatBot = () => {
           case "LinkedIn":
             link = "https://www.linkedin.com/in/gulverda/";
             break;
-          case "No, thanks":
-            return "No problem! Have a great day!";
+          case "არა, მადლობა":
+            return "არ არის პრობლემა! კარგ დღეს გისურვებ :)";
+            break;
           default:
-            return "I don't know what you mean. Please try again.";
+            return "ვერ მივხვდი რას გულისხმობ. გთხოვ აირჩიო შესაბამისი პარამეტრი.";
         }
         setTimeout(() => {
           window.open(link);
         }, 1000);
-        return `Sit tight! I'll send you to ${params.userInput}!`;
+        return `მოითმინე! ახლავე დაგეხმარები ${params.userInput}!`;
       },
       transition: { duration: 1 },
       path: "loop"
     },
     loop: {
-      message: "Do you need any more help?",
-      options: ["Calendar", "Github", "LinkedIn", "No, thanks"],
+      message: "სხვა რამით ხო ვერ დაგეხმარები?",
+      options: ["დახმარება", "კალენდარი", "Github", "LinkedIn", "არა, მადლობა"],
       path: "process_options"
     },
   };

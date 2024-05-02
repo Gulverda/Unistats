@@ -15,6 +15,7 @@
     "react": "^18.2.0",
     "react-big-calendar": "^1.12.0",
     "react-big-scheduler": "^0.2.7",
+    "react-chatbotify": "^1.5.2",
     "react-dom": "^18.2.0",
     "react-router": "^5.3.4",
     "react-router-dom": "^5.3.4",

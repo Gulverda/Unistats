@@ -213,3 +213,29 @@ li a {
   flex: 1;
   padding: 20px;
 }
+
+.chatbot-container .rcb-chat-footer-container span span {
+  display: none; 
+}
+
+.chatbot-container .rcb-chat-footer-container .rcb-attach-button-disabled {
+  display: none; 
+}
+
+.chatbot-container .rcb-window-open{
+  width: 200px;}
+
+/* MyChatBot.css */
+.chatbot-container div:nth-child(43){
+  width: 400px !important; /* Set your desired width */
+  height: 500px; /* Set your desired height */
+}
+
+.rcb-chat-bot button{
+  background-image: url(../src/assets/Dark\ Version.png) !important;
+}
+
+.rcb-badge{
+  padding: 3px 10px !important;
+  background-color: #50df4c !important;
+}

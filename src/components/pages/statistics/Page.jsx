@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "../../nav/nav";
 import Img1 from "./img/caucasus_Logo-1.png";
 import Img2 from "./img/caucasus_Logo-2.png";
@@ -12,7 +12,7 @@ import Img10 from "./img/Tsu_Logo-3.png";
 
 import "./style.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleExclamation, faCircleXmark, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCircleExclamation, faCircleXmark, faCircleCheck, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Page = () => {
     const universities = [
@@ -31,6 +31,23 @@ const Page = () => {
         { id: 13, img: Img7, name: 'სსიპ ივანე ჯავახიშვილის სახელობის თბილისის სახელმწიფო უნივერსიტეტი',color:'#EE5D50', icon: faCircleXmark, status: 'Disable', location: 'თბილისი', students: 120, completionRate: '29%' },
         { id: 14, img: Img6, name: 'თბილისის თავისუფალი უნივერსიტეტი',color:'#FFCE20', icon: faCircleExclamation, status: 'Error', location: 'თბილისი', students: 120, completionRate: '29%' },
         { id: 15, img: Img4, name: 'კავკასიის უნივერსიტეტი',color:'#FFCE20', icon: faCircleExclamation, status: 'Approved', location: 'თბილისი', students: 120, completionRate: '20%' },
+      ];
+      const students = [
+        { id: '01', img: Img1, name: 'გიგი გიორგაძე',  icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '02', img: Img2, name: 'გიორგი ყაზიშვილი', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '03', img: Img3, name: 'დუდა ელბაქიძე', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '04', img: Img4, name: 'ნიკოლოზ დვალიშვილი', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3', gpa: '4.3' },
+        { id: '05', img: Img5, name: 'ლუკა გულვერდაშვილი', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '06', img: Img1, name: 'გიგი გიორგაძე',  icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '07', img: Img2, name: 'გიორგი ყაზიშვილი', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '08', img: Img3, name: 'დუდა ელბაქიძე', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '09', img: Img4, name: 'ნიკოლოზ დვალიშვილი', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3', gpa: '4.3' },
+        { id: '10', img: Img5, name: 'ლუკა გულვერდაშვილი', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '11', img: Img1, name: 'გიგი გიორგაძე',  icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '12', img: Img2, name: 'გიორგი ყაზიშვილი', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '13', img: Img3, name: 'დუდა ელბაქიძე', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
+        { id: '14', img: Img4, name: 'ნიკოლოზ დვალიშვილი', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3', gpa: '4.3' },
+        { id: '15', img: Img5, name: 'ლუკა გულვერდაშვილი', icon: faEnvelope, university: 'GAU', faculty: 'ინფორმატიკა', students: 120, gpa: '4.3' },
       ];
 
       const UniversityCard = ({ university }) => {
@@ -51,6 +68,47 @@ const Page = () => {
             </p>
           </div>
         );
+      };
+
+      const StudentsCard = ({ students }) => {
+        return (
+          <div className="student-card">
+            <p>{students.id}</p>
+            <p className="img-box">
+              <img src={students.img} alt="" />
+              {students.name}
+            </p>
+            <p className="status">
+              <FontAwesomeIcon icon={students.icon } style={{fontSize:"18px",color:'#4318FF'}}/>
+            </p>
+            <p className="uni">{students.university}</p>
+            <p>{students.faculty}</p>
+            <p className="ratingi">{students.gpa}
+            </p>
+          </div>
+        );
+      };
+      const [isMenuOpen, setIsMenuOpen] = useState(false);
+      const [isMenuOpenTwo, setIsMenuOpenTwo] = useState(false);
+
+      const [selectedOption, setSelectedOption] = useState('უნივერსიტეტი');
+      const [selectedOptionTwo, setSelectedOptionTwo] = useState('ფილტრი');
+
+
+      const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+      };
+      const toggleMenuTwo = () => {
+        setIsMenuOpenTwo(!isMenuOpenTwo);
+      };
+
+      const handleOptionSelect = (option) => {
+        setSelectedOption(option);
+        setIsMenuOpen(false);
+      };
+      const handleOptionSelectTwo = (option) => {
+        setSelectedOptionTwo(option);
+        setIsMenuOpenTwo(false);
       };
   return (
 
@@ -127,35 +185,75 @@ const Page = () => {
       </div>
       <div className="box">
         <div className="head-of-content">
-            <div className="burger">
-                <h3>უნივერსიტეტი</h3>
+            <div className="burger"  onClick={toggleMenu}>
+                <h3 className="select">{selectedOption}</h3>
                 <span className="arrow"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.792893C0.683418 0.402369 1.31658 0.402369 1.70711 0.792893L5 4.08579L8.29289 0.792893C8.68342 0.402369 9.31658 0.402369 9.70711 0.792893C10.0976 1.18342 10.0976 1.81658 9.70711 2.20711L5.70711 6.20711C5.51957 6.39464 5.26522 6.5 5 6.5C4.73478 6.5 4.48043 6.39464 4.29289 6.20711L0.292893 2.20711C-0.0976311 1.81658 -0.0976311 1.18342 0.292893 0.792893Z" fill="#251D35" />
                 </svg>
                 </span>
             </div>
-            <div className="burger b_two" style={{textAlign: "right"}}>
-                <h3>ფილტრი</h3>
+            
+            <div className="burger b_two" onClick={toggleMenuTwo} style={{textAlign: "right"}}>
+                <h3 className="select">{selectedOptionTwo}</h3>
                 <span className="arrow"><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.792893C0.683418 0.402369 1.31658 0.402369 1.70711 0.792893L5 4.08579L8.29289 0.792893C8.68342 0.402369 9.31658 0.402369 9.70711 0.792893C10.0976 1.18342 10.0976 1.81658 9.70711 2.20711L5.70711 6.20711C5.51957 6.39464 5.26522 6.5 5 6.5C4.73478 6.5 4.48043 6.39464 4.29289 6.20711L0.292893 2.20711C-0.0976311 1.81658 -0.0976311 1.18342 0.292893 0.792893Z" fill="#251D35" />
                 </svg>
                 </span>
             </div>
         </div>
-        <dir className="box_child">
+        {isMenuOpen && (
+        <div className={`menu-content ${isMenuOpen ? 'open' : ''}`}>
+          <ul>
+          <li onClick={() => handleOptionSelect('უნივერსიტეტი')}>უნივერსიტეტი</li>
+          <li onClick={() => handleOptionSelect('სტუდენტი')}>სტუდენტი</li>
+        </ul>
+        </div>
+      )}
+       {isMenuOpenTwo && (
+        <div className={`menu-content-tow ${isMenuOpen ? 'open' : ''}`}>
+          <ul>
+          <li onClick={() => handleOptionSelectTwo('ფილტრი')}>ფილტრი...</li>
+          <li onClick={() => handleOptionSelectTwo('დასაქმების მაჩვენებელი')}>დასაქმების მაჩვენებელი</li>
+          <li onClick={() => handleOptionSelectTwo('სტუდენტთა რაოდენობა')}>სტუდენტთა რაოდენობა</li>
+          <li onClick={() => handleOptionSelectTwo('გაცვლით პროგრამები')}>გაცვლით პროგრამები</li>
+          <li onClick={() => handleOptionSelectTwo('დამთავრებულთა რაოდენობა')}>დამთავრებულთა რაოდენობა</li>
+        </ul>
+        </div>
+      )}
+        {selectedOption === "უნივერსიტეტი" && (
+          <div className="box_child">
             <div className="table">
-                <span>#</span>
-                <span>უნივერსიტეტი</span>
-                <span>მდებარეობა</span>
-                <span>უ.ს.დ კოდი</span>
-                <span className="text">დასაქმების მაჩვენებელი</span>
+              <span>#</span>
+              <span>უნივერსიტეტი</span>
+              <span>მდებარეობა</span>
+              <span>უ.ს.დ კოდი</span>
+              <span className="text">დასაქმების მაჩვენებელი</span>
             </div>
             <div className="contenti">
               {universities.map((university) => (
-                  <UniversityCard key={university.id} university={university} />
+                <UniversityCard key={university.id} university={university} />
               ))}
             </div>
-        </dir>
+          </div>
+        )}
+
+        {selectedOption === "სტუდენტი" && (
+                  <div className="box_child">
+                    <div className="table-two">
+                      <span>#</span>
+                      <span>სტუდენტი</span>
+                      <span>საკონტაქტო</span>
+                      <span>უნივერსიტეტი</span>
+                      <span>ფაკულტეტი</span>
+                      <span>GPA</span>
+                    </div>
+                    <div className="contenti">
+                      {students.map((students) => (
+                        <StudentsCard key={students.id} students={students} />
+                      ))}
+                    </div>
+                  </div>
+          )}
       </div>
     </div>
     </div>

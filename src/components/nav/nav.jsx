@@ -114,9 +114,9 @@ const Sidebar = () => {
         </li>
         <li>
           <NavLink
-            to="/contact"
+            to="/aboutUs"
             activeclassame="active"
-            onClick={() => handleNavLinkClick("contact")}
+            onClick={() => handleNavLinkClick("aboutUs")}
           >
             <svg
               width="26"

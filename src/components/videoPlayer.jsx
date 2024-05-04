@@ -33,7 +33,7 @@ export default function VideoPlayer() {
                                 style={{minHeight: "285px"}}
                             />
 
-                            <button onClick={handlePlayerClick} className="w-9 h-9 border-2 rounded-full border-white flex  justify-center  items-center absolute left-48 cursor-pointer heartbeat" style={{bottom: "36px"}}>
+                            <button onClick={handlePlayerClick} className="w-9 h-9 border-2 rounded-full border-white flex  justify-center  items-center absolute left-48 cursor-pointer heartbeat" style={{bottom: "41px"}}>
                                 <img src={player} alt="play" />
                             </button>
 

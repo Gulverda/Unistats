@@ -5,7 +5,8 @@ import Map from "./Map.jsx";
 import Sidebar from "./nav/nav.jsx";
 import Ratings_uni from "./ratings/ratings_for_uni.jsx";
 import Ratings_for_student from "./ratings/ratings_for_student.jsx";
-import Calendar from "./calendar.jsx";
+import Box from "./Main_calendar/box.jsx";
+
 
 export default function Home() {
   return (
@@ -121,7 +122,7 @@ export default function Home() {
               gap: "25px"
             }}
           >
-            <Calendar/>
+            <Box/>
             <Ratings_for_student/>
             <Map/>
           </div>

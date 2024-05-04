@@ -166,7 +166,7 @@ const Sidebar = () => {
                 strokeLinecap="round"
               />
             </svg>{" "}
-            ჩვენს შესახებ
+            ჩვენ შესახებ
           </NavLink>
         </li>
         <li>

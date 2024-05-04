@@ -13,7 +13,7 @@ export default function Home() {
     <div className=" h-screen bg-customGray flex flex-row center">
       <div
         className="relative font-tktMedium flex items-center"
-        style={{ width: "100%", height: "70px", background: "white", position: "fixed", paddingTop: "10px", zIndex: "2"}}
+        style={{ width: "100%", height: "70px", background: "rgba(255, 255, 255, 0.5)", position: "fixed", paddingTop: "10px", zIndex: "2",  backdropFilter: "blur(10px)", paddingBottom: "6px"}}
       >
         <div className="title" style={{position: "relative", marginLeft: "20px"}}>
         <svg
@@ -74,7 +74,7 @@ export default function Home() {
           </g>
         </svg>
         </div>
-        <h1 className="mx-20 text-customFontSize">მთავარი</h1>
+        <h1 style={{fontFamily: "tkt", marginLeft: "80px", fontSize: "22px"}}>მთავარი</h1>
       </div>
       <div className="flex">
         <Sidebar/>

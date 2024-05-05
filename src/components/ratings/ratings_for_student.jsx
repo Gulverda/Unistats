@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/style_SRating.css";
 import img1 from "../../assets/profile_imgs/image.svg";
 import img2 from "../../assets/profile_imgs/Image1.svg";
@@ -9,6 +9,8 @@ import img6 from "../../assets/profile_imgs/Rectangle 346-4.svg";
 import img7 from "../../assets/profile_imgs/Rectangle 346-5.svg";
 
 const Ratings_for_student = () => {
+
+
   return (
     <div className="rating_div">
       {/* top */}
@@ -21,14 +23,15 @@ const Ratings_for_student = () => {
         >
           <div className="top">
             <p>რეიტინგი</p>
-            <button>ვრცლად</button>
+              
+              <button>ვრცლად</button>
           </div>
         </div>
         <table>
           <thead>
             <tr className="theads">
-              <th style={{width: "45%"}}>სტუდენტი</th>
-              <th style={{width: "35%"}}>უნივერსიტეტი</th>
+              <th style={{ width: "45%" }}>სტუდენტი</th>
+              <th style={{ width: "35%" }}>უნივერსიტეტი</th>
               <th>GPA</th>
             </tr>
           </thead>

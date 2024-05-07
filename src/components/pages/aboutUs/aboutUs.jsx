@@ -46,7 +46,7 @@ export default function AboutUs() {
     };
   }, []);
   return (
-    <div className=" h-screen bg-customGray flex flex-row center">
+    <div className="h-screen bg-customGray flex flex-row center">
       <div
         className="relative font-tktMedium flex items-center"
         style={{
@@ -159,7 +159,7 @@ export default function AboutUs() {
                     ჩვენ შესახებ
                   </h1>
                   <div className="photo-text">
-                    <p data-aos="fade-up" data-aos-duration="500">
+                    <p data-aos="fade-up" data-aos-duration="500" style={{paddingRight: "20px"}}>
                       UNISTATS არის სტუდენტთა ჯგუფის მიერ შექმნილი პლათფორმა,{" "}
                       რომელიც ემსახურება ადამიანების მათ შორის აბიტურიენტთა,
                       სტუდენტთა და სხვა დაინტერესებული პირთა ცნობადობის

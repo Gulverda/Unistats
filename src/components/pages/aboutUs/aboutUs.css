@@ -44,12 +44,14 @@
 .photo-text {
     display: flex;
     align-items: center;
-    margin-top: -30px;
 }
 
 .purple-cont {
   width: 100%;
-  height: 350px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
   position: relative;
   background-color: #4318ff;
   display: flex;
@@ -91,7 +93,14 @@
 }
 
 .group-inner h1 {
-    font-size: 23px;
+    font-size: 25px;
+}
+
+.members h1 {
+  font-size: 18px;
+  width: 150px;
+  height: 100px;
+  padding-top: 8px;
 }
 
 .gigi, .duda, .me, .gulo, .yazo {
@@ -99,4 +108,28 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: "tkt";
+}
+
+
+@media screen and (max-width: 1425px){
+  .photo-text{
+    flex-direction: column;
+  }
+  .photo-text img{
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1175px){
+  .members{
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 1025px){
+  .abUs-container-Main {
+    padding-left: 0;
+  }
 }

@@ -111,6 +111,15 @@
     font-family: "tkt";
 }
 
+.firstRow{
+  display: flex;
+  gap: 40px;
+}
+
+.secondRow{
+  display: flex;
+  gap: 40px;
+}
 
 @media screen and (max-width: 1425px){
   .photo-text{
@@ -121,9 +130,15 @@
   }
 }
 
-@media screen and (max-width: 1175px){
+@media screen and (max-width: 1180px){
   .members{
     flex-direction: column;
+  }
+  .firstRow{
+    gap: 60px;
+  }
+  .secondRow{
+    gap: 60px;
   }
 }
 
@@ -131,5 +146,57 @@
 @media screen and (max-width: 1025px){
   .abUs-container-Main {
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .me img{
+    width: 80px;
+    height: auto;
+  }
+  .me h1{
+    font-size: 15px;
+  }
+  .gulo img{
+    width: 80px;
+    height: auto;
+  }
+  .gulo h1{
+    font-size: 15px;
+  }
+  .yazo img{
+    width: 80px;
+    height: auto;
+  }
+  .yazo h1{
+    font-size: 15px;
+  }
+  .duda img{
+    width: 80px;
+    height: auto;
+  }
+  .duda h1{
+    font-size: 15px;
+  }
+  .gigi img{
+    width: 80px;
+    height: auto;
+  }
+  .gigi h1{
+    font-size: 15px;
+  }
+  .secondRow{
+    gap: 10px;
+  }
+  .members h1 {
+    width: 110px;
+    height: 50px;
+    padding-top: 8px;
+  }
+  .firstRow{
+    gap: 20px;
+  }
+  .members{
+    padding-bottom: 80px;
   }
 }

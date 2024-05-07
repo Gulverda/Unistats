@@ -216,6 +216,7 @@ export default function AboutUs() {
                   </h1>
 
                   <div className="members">
+                    <div className="firstRow">
                     <div className="gigi">
                       <img src={gigi} alt="" />
                       <h1>
@@ -231,6 +232,8 @@ export default function AboutUs() {
                         ელბაქიძე
                       </h1>
                     </div>
+                    </div>
+                    <div className="secondRow">
                     <div className="me">
                       <img src={me} alt="" srcset="" />
                       <h1>
@@ -254,6 +257,7 @@ export default function AboutUs() {
                         <br />
                         ყაზიშვილი
                       </h1>
+                    </div>
                     </div>
                   </div>
                 </div>

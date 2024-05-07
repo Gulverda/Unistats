@@ -145,7 +145,7 @@ export default function AboutUs() {
               <div className="whole-inner">
                 <div className="inner-content">
                   <p
-                    style={{ color: "#4318FF" }}
+                    style={{ color: "#4318FF", fontWeight: "bold"}}
                     data-aos="fade-up"
                     data-aos-duration="500"
                   >
@@ -212,7 +212,7 @@ export default function AboutUs() {
               >
                 <div className="group-inner">
                   <h1>
-                    შეხვდი <span>Unistats </span>- ის ჯგუფს
+                    შეხვდი <span style={{fontWeight: "bold"}}>Unistats </span>- ის ჯგუფს
                   </h1>
 
                   <div className="members">

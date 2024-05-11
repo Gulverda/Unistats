@@ -176,7 +176,12 @@ body {
   }
 }
 
-
+.rbc-calendar{
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
 
 
 .sidebar.open {

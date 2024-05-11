@@ -105,6 +105,7 @@
     align-items: center;
     gap: 10px;
     padding-left: 10px;
+    font-size: 16px;
 }
 .ratingi {
     border: 1px solid #4318FF;

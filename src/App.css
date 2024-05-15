@@ -135,7 +135,7 @@ body {
 
   .child-for-grid{
     width: 100% !important;
-    max-width: 450px;
+    max-width: 100%;
   }
 
 

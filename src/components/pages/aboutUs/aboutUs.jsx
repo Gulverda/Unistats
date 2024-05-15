@@ -225,7 +225,7 @@ export default function AboutUs() {
                       </h1>
                     </div>
                     <div className="duda">
-                      <img src={duda} alt="" srcset="" />
+                      <img src={duda} alt="" srcSet="" />
                       <h1>
                         დუდა
                         <br />
@@ -235,7 +235,7 @@ export default function AboutUs() {
                     </div>
                     <div className="secondRow">
                     <div className="me">
-                      <img src={me} alt="" srcset="" />
+                      <img src={me} alt="" srcSet="" />
                       <h1>
                         ნიკოლოზ
                         <br />
@@ -243,7 +243,7 @@ export default function AboutUs() {
                       </h1>
                     </div>
                     <div className="gulo">
-                      <img src={gulo} alt="" srcset="" />
+                      <img src={gulo} alt="" srcSet="" />
                       <h1>
                         ლუკა
                         <br />
@@ -251,7 +251,7 @@ export default function AboutUs() {
                       </h1>
                     </div>
                     <div className="yazo">
-                      <img src={yazo} alt="" srcset="" />
+                      <img src={yazo} alt="" srcSet="" />
                       <h1>
                         გიორგი
                         <br />

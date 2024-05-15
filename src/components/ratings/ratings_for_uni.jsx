@@ -1,81 +1,57 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "./css/style_for_uniR.css";
-import { CChart } from '@coreui/react-chartjs'
+import React from 'react';
+import { ResponsiveContainer, LineChart, Line, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 
+export default function Recharts() {
+  const data = [
+    { year: '2021', GAU: 90, TSU: 87, EU: 25, KIU: 46 },
+    { year: '2022', GAU: 99, TSU: 65, EU: 45, KIU: 23 },
+    { year: '2023', GAU: 86, TSU: 78, EU: 67, KIU: 23 },
+    { year: '2024', GAU: 79, TSU: 85, EU: 89, KIU: 23 },
+  ];
 
-const Ratings_uni = () => {
-  const [activeLink, setActiveLink] = useState("");
-
-  const handleNavLinkClick = (link) => {
-    setActiveLink(link);
-  };
   return (
-    <div
-  className="rating">
-    <div className="rating-title">
-      <span style={{fontSize: "1.25rem", fontFamily: "tktMedium"}}>უნივერსიტეტების სტატისტიკა</span>
-      <div style={{display:'flex', gap: "10px", alignItems:'center'}}>
-        <button>
-          <NavLink
-            to="/Statistic"
-            activeclassname="active"
-            onClick={() => handleNavLinkClick("Page")}
-            >
-              ვრცლად
-          </NavLink>
-        </button>
-        <div className="tooltip-box">
-          <div style={{position: 'absolute', width: '450px', textAlign: "center"}}>
-            <span id="tooltip">სქემა წარმოადგენს უნივერსიტეტების დასაქმების მაჩვენებლებს წლების მიხედვით</span>
-          </div>
-          <div className="circle">i</div>
+    <div className="row">
+      <div className="col-md-12">
+        <h2>Charts with recharts library</h2>
+      </div>
+
+      <div className="section col-md-6">
+        <h3 className="section-title">Line Chart</h3>
+        <div className="section-content">
+          <ResponsiveContainer width="100%" height={300}>
+            <LineChart data={data} margin={{ top: 15, right: 0, bottom: 15, left: 0 }}>
+              <Tooltip />
+              <XAxis dataKey="year" />
+              <YAxis />
+              <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+              <Legend />
+              <Line type="monotone" dataKey="GAU" stroke="#0c2015" name="GAU" />
+              <Line type="monotone" dataKey="TSU" stroke="#0b60b7" name="TSU" />
+              <Line type="monotone" dataKey="EU" stroke="#4e18ff" name="EU" />
+              <Line type="monotone" dataKey="KIU" stroke="#3c10ea" name="KIU" />
+            </LineChart>
+          </ResponsiveContainer>
         </div>
       </div>
+
+      {/* <div className="section col-md-6">
+        <h3 className="section-title">Bar Chart</h3>
+        <div className="section-content">
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={data} margin={{ top: 15, right: 0, bottom: 15, left: 0 }}>
+              <XAxis dataKey="year" />
+              <YAxis />
+              <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="GAU" fill="#0c205D" name="GAU" />
+              <Bar dataKey="TSU" fill="#0b60b7" name="TSU" />
+              <Bar dataKey="EU" fill="#4e18ff" name="EU" />
+              <Bar dataKey="KIU" fill="#3c10ea" name="KIU" />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      </div> */}
     </div>
-  <CChart
-    type='bar'
-    data={{
-      labels: ['2021', '2022', '2023', '2024'],
-      datasets: [
-        {
-          label: 'GAU',
-          backgroundColor: '#0c205D',
-          borderColor: '#0c2015',
-          data: [90, 99,86,79],
-        },
-        {
-          label: 'TSU',
-          backgroundColor: '#0b60b7',
-          borderColor: '#0b60b7',
-          data: [87, 65,78,85],
-        },
-        {
-          label: 'EU',
-          backgroundColor: '#4e18ff',
-          borderColor: '#4e18ff',
-          data: [25, 45,67,89],
-        },
-        {
-          label: 'KIU',
-          backgroundColor: '#3c10ea',
-          borderColor: '#3c10ea',
-          data: [46, 23,23,23],
-        }
-      ],
-    }}
-    options={{
-      aspectRatio: 2.6
-    }}
-    height={200}
-    width={'100%'}
-    style={{ borderRadius: '16px' }} 
-  />
-</div>
-
   );
-};
-
-export default Ratings_uni;
-
-
+}

@@ -100,7 +100,6 @@ body {
 }
 
 .sidebar li:hover a {
-  padding: 10px;
   color: aliceblue;
   width: 252px;
 }
@@ -118,6 +117,8 @@ body {
   font-family: tkt;
   color: #737791;
   text-decoration: none;
+  padding: 10px;
+
 }
 
 @media screen and (max-width: 1300px) {
@@ -130,7 +131,7 @@ body {
     width: 100%;
     max-width: 30rem;
     height: auto; 
-    min-height: 280px;/* Allow the height to adjust automatically based on the aspect ratio */
+    min-height: 280px;
 }
 
   .child-for-grid{
@@ -175,22 +176,27 @@ body {
   }
 }
 
-
+.rbc-calendar{
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
 
 
 .sidebar.open {
-  left: 0; /* Show sidebar */
+  left: 0;
 }
 
 .burger-menu {
-  display: none; /* Initially hide for larger screens */
+  display: none;
 }
 
 @media (max-width: 1024px) {
   .sidebar {
     position: fixed;
     top: 0;
-    left: -250px; /* Initially hidden */
+    left: -250px;
     width: 250px;
     height: 100%;
     background-color: #fff;
@@ -198,7 +204,7 @@ body {
   }
 
   .burger-menu {
-    display: block; /* Show burger menu for smaller screens */
+    display: block;
     cursor: pointer;
     padding: 20px;
   }

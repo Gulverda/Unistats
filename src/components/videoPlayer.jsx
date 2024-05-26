@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import photo from "../assets/BannerPhoto.png";
 import player from "../assets/samkutxedi.svg";
 import video from "../assets/video.mp4";
@@ -6,9 +6,25 @@ import { NavLink } from "react-router-dom";
 
 export default function VideoPlayer() {
   const [isClicked, setIsClicked] = useState(false);
+  const [showCloseButton, setShowCloseButton] = useState(true);
+
+  useEffect(() => {
+    let timer;
+    if (isClicked) {
+      timer = setTimeout(() => {
+        setShowCloseButton(false);
+      }, 5000);
+    }
+    return () => clearTimeout(timer);
+  }, [isClicked]);
 
   const handlePlayerClick = () => {
     setIsClicked(true);
+  };
+
+  const handleCloseClick = () => {
+    setIsClicked(false);
+    setShowCloseButton(true);
   };
 
   const [activeLink, setActiveLink] = useState("");
@@ -18,29 +34,39 @@ export default function VideoPlayer() {
   };
 
   return (
-    <div
-      className="relative"
-      style={{ width: "100%", height: "auto", minHeight: "285px" }}
-    >
+    <div className="relative" style={{ width: "100%", height: "auto", minHeight: "285px" }}>
       {isClicked ? (
-        <video
-          src={video}
-          controls
-          autoPlay
-          className="absolute top-0 left-0 w-full h-full object-cover rounded-xl z-0"
-        />
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20">
+          <div className="relative z-30 w-full h-full max-h-screen max-w-screen flex justify-center items-center">
+            <video
+              src={video}
+              controls
+              autoPlay
+              className="w-full h-full object-cover rounded-xl"
+              style={{ maxHeight: "90vh", maxWidth: "90vw" }}
+            />
+            <button
+              onClick={handleCloseClick}
+              className={`absolute top-4 right-4 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center z-40 transition-opacity duration-300 ${
+                showCloseButton ? "opacity-100" : "opacity-0 hover:opacity-100"
+              }`}
+            >
+              &times;
+            </button>
+          </div>
+        </div>
       ) : (
         <>
           <img
             src={photo}
             alt="Banner Photo"
-            className="w-default h-auto bg-cover rounded-xl z-10"
+            className="w-full h-auto bg-cover rounded-xl z-10"
             style={{ minHeight: "285px" }}
           />
 
           <button
             onClick={handlePlayerClick}
-            className="w-9 h-9 border-2 rounded-full border-white flex  justify-center  items-center absolute left-48 cursor-pointer heartbeat"
+            className="w-9 h-9 border-2 rounded-full border-white flex justify-center items-center absolute left-48 cursor-pointer heartbeat"
             style={{ bottom: "41px" }}
           >
             <img src={player} alt="play" />

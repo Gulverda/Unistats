@@ -34,7 +34,7 @@ export default function Recharts() {
         </div>
       </div>
 
-      {/* <div className="section col-md-6">
+      <div className="section col-md-6">
         <h3 className="section-title">Bar Chart</h3>
         <div className="section-content">
           <ResponsiveContainer width="100%" height={300}>
@@ -51,7 +51,7 @@ export default function Recharts() {
             </BarChart>
           </ResponsiveContainer>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

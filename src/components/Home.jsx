@@ -102,6 +102,7 @@ export default function Home() {
         >
           <div
             style={{
+              maxWidth: "725px",
               display: "flex",
               // justifyContent: "center",
               flexDirection: "column",

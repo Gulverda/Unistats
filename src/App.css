@@ -47,7 +47,12 @@ body {
   padding-top: 10px;
   padding-right: 20px;
   z-index: 1;
+  background-image: url('./assets/bg_for_sidebar.png'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-repeat: no-repeat;
+  background-size: contain; /* or contain, depending on your preference */
+  background-position: bottom; /* Align the image to the bottom */
 }
+
 
 .sidebar h1 {
   margin-left: 30px;

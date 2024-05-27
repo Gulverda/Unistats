@@ -9,7 +9,7 @@ export default function AnnualStats() {
   return (
     <div className="w-auto max-w-full h-auto py-5 px-5 bg-white rounded-2xl flex flex-col gap-5">
       <div className="flex flex-col gap-0.5">
-        <h1 className="font-tktMedium">2024 წლის მონაცემები</h1>
+        <h1 className="font-tktMedium text-xl">2024 წლის მონაცემები</h1>
         <h4 className="font-tkt text-gray-700">სტატისტიკა</h4>
       </div>
 

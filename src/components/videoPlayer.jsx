@@ -67,7 +67,7 @@ export default function VideoPlayer() {
           <button
             onClick={handlePlayerClick}
             className="w-9 h-9 border-2 rounded-full border-white flex justify-center items-center absolute left-48 cursor-pointer heartbeat"
-            style={{ bottom: "36px" }}
+            style={{ bottom: "41px" }}
           >
             <img src={player} alt="play" />
           </button>

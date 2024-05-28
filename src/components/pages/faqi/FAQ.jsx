@@ -29,7 +29,7 @@ function FAQ() {
   return (
     <div className="faq-container-Main">
       <div className="faq-container">
-        <Sidebar/>
+        <Sidebar />
         <div className="oriwami">
           <div
             style={{
@@ -41,11 +41,28 @@ function FAQ() {
               alignItems: "center",
             }}
           >
-            <h1 style={{ fontFamily: "tkt", paddingTop: "18px", fontSize: "24px", fontWeight: "bold" }}>FAQ</h1>
+            <h1
+              style={{
+                fontFamily: "tkt",
+                paddingTop: "18px",
+                fontSize: "22px",
+              }}
+            >
+              FAQ
+            </h1>
           </div>
           <div className="faq-content">
-            <h1 style={{fontFamily: "tkt", fontSize: '2rem', fontWeight: "bold", paddingLeft: "10px",
-        paddingTop: "10px"}}>ხშირად დასმული კითხვები</h1>
+            <h1
+              style={{
+                fontFamily: "tkt",
+                fontSize: "2rem",
+                fontWeight: "bold",
+                paddingLeft: "10px",
+                paddingTop: "10px",
+              }}
+            >
+              ხშირად დასმული კითხვები
+            </h1>
             {faqData.map((faq, index) => (
               <div key={index} className="faq-item">
                 <div

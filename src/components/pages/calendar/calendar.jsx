@@ -45,7 +45,7 @@ const MyScheduler = () => {
     <div className="calendar_container">
       <div
         className="relative font-tktMedium flex items-center"
-        style={{ width: "100%", height: "70px", background: "white", position: "fixed", paddingTop: "10px", zIndex: "2"}}
+        style={{ width: "100%", height: "70px", background: "white", position: "fixed", paddingTop: "3px", zIndex: "2"}}
       >
         <div className="title" style={{position: "relative", marginLeft: "20px"}}>
         <svg
@@ -106,17 +106,17 @@ const MyScheduler = () => {
           </g>
         </svg>
         </div>
-        <h1 className="mx-20 text-customFontSize">კალენდარი</h1>
+        <h1 className="mx-20" style={{fontSize: "22px", fontFamily: "tkt"}}>კალენდარი</h1>
       </div>
       <Sidebar />
-      <div className="calendar_content" style={{paddingLeft: "270px"}}>
+      <div className="calendar_content" style={{paddingLeft: "270px" }}>
         <button onClick={addEvent} style={{fontFamily: "tkt", padding: "10px", marginBottom: "15px", background: "#4318FF", display: "flex", alignItems: "center", justifyContent: "center", color: "white", borderRadius: "10px"}}>ღონისძიების დამატება</button>
         <Calendar
           localizer={localizer}
           events={events}
           startAccessor="start"
           endAccessor="end"
-          style={{ height: 500, fontFamily: "tkt" }}
+          style={{ height: 500, fontFamily: "tkt", boxShadow: "0px 0px 10px rgba(194, 212, 255, 0.7)" }}
           eventPropGetter={eventStyleGetter}
           views={['month', 'week', 'day', 'agenda']}
           messages={{

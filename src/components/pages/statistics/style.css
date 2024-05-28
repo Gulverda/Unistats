@@ -115,6 +115,27 @@
     height: 650px;
     overflow-y: scroll;
 }
+
+.contenti::-webkit-scrollbar-track {
+    background-color: none; 
+    border-radius: 10px; 
+}
+
+.contenti::-webkit-scrollbar-thumb {
+    background-color: #bcbcbc; 
+    border-radius: 10px; 
+    border: 3px solid white; 
+}
+
+.contenti::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+
+.contenti::-webkit-scrollbar {
+    width: 12px; 
+}
+
+
 .img-box {
     display: flex;
     align-items: center;

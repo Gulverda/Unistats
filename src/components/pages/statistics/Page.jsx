@@ -115,7 +115,7 @@ const Page = () => {
     <div>
       <div
         className="relative font-tktMedium flex items-center"
-        style={{ width: "100%", height: "70px", background: "white", position: "fixed", paddingTop: "10px", zIndex: "2"}}
+        style={{ width: "100%", height: "70px", background: "white", position: "fixed", paddingTop: "3px", zIndex: "2"}}
       >
         <div className="title" style={{position: "relative", marginLeft: "20px"}}>
         <svg
@@ -176,14 +176,14 @@ const Page = () => {
           </g>
         </svg>
         </div>
-        <h1 className="mx-20 text-customFontSize">სტატისტიკა</h1>
+        <h1 style={{fontFamily: "tkt", marginLeft: "80px", fontSize: "22px"}}>სტატისტიკა</h1>
       </div>
     <div className="containeri">
       
       <div className="flex">
         <Sidebar />
       </div>
-      <div className="box">
+      <div className="box" style={{ boxShadow: "0px 0px 10px rgba(194, 212, 255, 0.7)"}}>
         <div className="head-of-content">
             <div className="burger"  onClick={toggleMenu}>
                 <h3 className="select">{selectedOption}</h3>

@@ -25,6 +25,7 @@
   }
 }
 
+
 .row {
   background-color: white;
   border-radius: 14px;
@@ -99,3 +100,109 @@
 .tooltip-box:hover #tooltip{
   visibility: visible;
 }
+.recharts-default-tooltip ul{
+  padding-bottom: 20px !important;
+}
+
+.recharts-default-tooltip{
+  width: 120px;
+  border-radius: 10px;
+}
+.recharts-default-tooltip p::after {
+  content: " წ.";
+}
+.recharts-default-tooltip ul li{
+  display: flex !important;
+ 
+}
+.recharts-default-tooltip ul li:nth-child(1)::before{
+    content: "";
+    display: inline-block;
+    background: url(../../pages/statistics/img/Gau_Logo-2.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.recharts-default-tooltip ul li:nth-child(2)::before{
+  content: "";
+  display: inline-block;
+  background: url(../../pages/statistics/img/caucasus_Logo-1.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.recharts-default-tooltip ul li:nth-child(3)::before{
+  content: "";
+  display: inline-block;
+  background: url(../../pages/statistics/img/caucasus_Logo-2.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.recharts-default-tooltip ul li:nth-child(4)::before{
+  content: "";
+  display: inline-block;
+  background: url(../../pages/statistics/img/Tsu_Logo-1.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.recharts-default-tooltip ul li:nth-child(5)::before{
+  content: "";
+  display: inline-block;
+  background: url(../../pages/statistics/img/Gau_Logo-1.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.recharts-default-tooltip ul li::after{
+  content: " %";
+}
+.recharts-legend-icon{
+  display: none !important;
+}
+.legend-item-0::before{
+  content: "";
+  display: inline-block;
+  background: url(../../pages/statistics/img/Gau_Logo-2.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.legend-item-1::before{
+    content: "";
+    display: inline-block;
+    background: url(../../pages/statistics/img/caucasus_Logo-1.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.legend-item-2::before{
+  content: "";
+  display: inline-block;
+  background: url(../../pages/statistics/img/caucasus_Logo-2.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.legend-item-3::before{
+  content: "";
+  display: inline-block;
+  background: url(../../pages/statistics/img/Tsu_Logo-1.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.legend-item-4::before{
+  content: "";
+  display: inline-block;
+  background: url(../../pages/statistics/img/Gau_Logo-1.png) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+/* .recharts-legend-item{
+  display: flex !important;
+  gap: 20px;
+} */

@@ -1,5 +1,4 @@
 import React from 'react'
-import Map_img from "../assets/Map_img.svg";
 
 const Map = () => {
     return (

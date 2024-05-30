@@ -32,6 +32,7 @@
 
 body {
   background-color: #f5f5f5;
+  overflow-x: hidden;
 }
 
 /* Sidebar.css */
@@ -265,4 +266,148 @@ body {
   .calendar_content{
     padding-left: 20px !important;
   }
+}
+
+/* -------------- Map Style ------------ */
+.svJ{
+  width: 500px;
+  height: 250px;
+}
+#features{
+  scale: 0.50;
+}
+svg #GEAB{
+  fill: #ECECEC;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GEAB:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GERL{
+  fill: #ECECEC;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GERL:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GEMM{
+  fill: #ECECEC;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GEMM:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GEKK{
+  fill: #ECECEC;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GEKK:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GEGU{
+  fill: #ECECEC;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GEGU:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GESZ{
+  fill: #F64E60;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GESZ:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GESK{
+  fill: #833BB7;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GESK:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GEKA{
+  fill: #0B60B7;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GEKA:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GESJ{
+  fill: #6993FF;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GESJ:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GEAJ{
+  fill: #FFA800;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GEAJ:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GETB{
+  fill: #8950FC;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GETB:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg #GEIM{
+  fill: #00AB9A;
+  stroke: #ffffff;
+  stroke-width: .7;
+}
+svg #GEIM:hover{
+  fill: #4318FF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+svg a span{
+  background-color: red;
 }

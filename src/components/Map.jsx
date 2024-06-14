@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Map = () => {
     return (
       <div style={{ width: '100%', height: '295px', boxShadow: "0px 4px 10px 0px #E1EAFF", paddingBottom:"3 0px" }} className="bg-white rounded-2xl box-border p-2 mx-auto mb-10">
+          <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
           <p className="text-xl font-medium text-black mt-2  ml-5 font-tktMedium">უნივერსიტეტები საქართველოში</p>
+          <div className="flex justify-center mt-4">
+            <Link to="/details">
+              <button style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                Details
+              </button>
+            </Link>
+          </div>
+          </div>
+
           <div className="w-full, h-full">
             {/* <img className='w-5/6 h-5/6' src={Map_img} alt="" /> */}
             <svg className='svJ' baseprofile="tiny" stroke-linecap="round" stroke-linejoin="round" version="1.2" viewbox="0 0 1000 1000" width="500px" height="500px" xmlns="http://www.w3.org/2000/svg">

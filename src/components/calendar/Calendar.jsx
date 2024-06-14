@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style_for_cal.css";
-import icon from "../../assets/calendar.svg";
+import icon from "../../assets/Calendar.svg";
 import { NavLink } from "react-router-dom";
 
 const Calendar = () => {

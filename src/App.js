@@ -7,6 +7,7 @@ import Statistic from './components/pages/statistics/Page.jsx';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import MyChatBot from './components/MyChatBot';
 import AboutUs from './components/pages/aboutUs/aboutUs.jsx';
+import Details from './components/pages/details/Details.jsx'; // Import the new Details component
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/FAQ" component={FAQ} />
           <Route path="/Statistic" component={Statistic}/>
           <Route path="/aboutUs" component={AboutUs}/>
+          <Route path="/details" component={Details} /> {/* Add the new Details route */}
           <Route path="/" component={Home} /> {/* This will be the default route */}
         </Switch>
       </Router>

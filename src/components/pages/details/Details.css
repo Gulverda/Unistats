@@ -13,6 +13,7 @@ button{
     border: 1px solid;
 }
 
+
 @media screen and (max-width: 1024px) {
     .for_map{
         margin-left: 0px !important;
@@ -28,8 +29,14 @@ button{
         max-width: 100% !important;
     }
 
-    table{
+    .for_map table{
         margin-top: -50px !important;
     }
 }
-  
+
+
+@media screen and (max-width: 575px) {
+    .for_map_display{
+        display: none !important;
+    }
+}

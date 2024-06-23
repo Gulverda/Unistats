@@ -9,3 +9,12 @@
 .active_text{
     box-shadow: 0px 0px 9px 3px #4218ff67;
 }
+
+@media screen and (max-width: 575px) {
+    .for_calendar_grid{
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+}

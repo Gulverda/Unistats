@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './pages/details/Details.css';
 
 const Map = () => {
     return (
-      <div style={{ width: '100%', height: '295px', boxShadow: "0px 4px 10px 0px #E1EAFF", paddingBottom:"3 0px" }} className="bg-white rounded-2xl box-border p-2 mx-auto mb-10">
+      <div style={{ width: '100%', height: '295px', boxShadow: "0px 4px 10px 0px #E1EAFF", paddingBottom:"3 0px" }} className="for_map_display bg-white rounded-2xl box-border p-2 mx-auto mb-10">
           <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: "relative"}}>
           <p className="text-xl font-medium text-black mt-2  ml-5 font-tktMedium">უნივერსიტეტები საქართველოში</p>
           <div className="flex justify-center mt-4" style={{ position: "absolute", right: "10px"}}>

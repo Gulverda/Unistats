@@ -32,11 +32,11 @@ export default function Recharts() {
   };
   return (
     <div className="row">
-      <div className="rating-title">
+      <div className="rating-title" style={{position: "relative"}}>
         <span style={{ fontSize: "1.25rem", fontFamily: "tktMedium" }}>
           უნივერსიტეტების სტატისტიკა
         </span>
-        <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+        <div style={{ display: "flex", gap: "10px", alignItems: "center", position: "absolute", right: "0"}}>
           <button>
             <NavLink
               to="/Statistic"

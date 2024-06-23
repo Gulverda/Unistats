@@ -34,7 +34,7 @@ const Calendar = () => {
           />
         </div>
       </NavLink>
-      <div style={{ display: "flex" }}>
+      <div className="for_calendar_grid" style={{ display: "flex" }}>
         <div className="flex group  rounded-full mx-1 transition-all cursor-pointer justify-center w-16">
           <div className="flex items-center px-4 py-4">
             <div className="text-center">

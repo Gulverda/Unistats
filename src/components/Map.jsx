@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 const Map = () => {
     return (
       <div style={{ width: '100%', height: '295px', boxShadow: "0px 4px 10px 0px #E1EAFF", paddingBottom:"3 0px" }} className="bg-white rounded-2xl box-border p-2 mx-auto mb-10">
-          <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+          <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: "relative"}}>
           <p className="text-xl font-medium text-black mt-2  ml-5 font-tktMedium">უნივერსიტეტები საქართველოში</p>
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-4" style={{ position: "absolute", right: "10px"}}>
             <Link to="/details">
-              <button style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                Details
-              </button>
+              <a style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+              <svg width="24px" height="24px" viewBox="0 0 16.00 16.00" xmlns="http://www.w3.org/2000/svg" fill="#4318ff" stroke="#4318ff" stroke-width="0.00016"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.44800000000000006"></g><g id="SVGRepo_iconCarrier"> <path d="m 2 6.007812 c -1.105469 0 -2 0.894532 -2 2 c 0 1.101563 0.894531 2 2 2 s 2 -0.898437 2 -2 c 0 -1.105468 -0.894531 -2 -2 -2 z m 6 0 c -1.105469 0 -2 0.894532 -2 2 c 0 1.101563 0.894531 2 2 2 s 2 -0.898437 2 -2 c 0 -1.105468 -0.894531 -2 -2 -2 z m 6 0 c -1.105469 0 -2 0.894532 -2 2 c 0 1.101563 0.894531 2 2 2 s 2 -0.898437 2 -2 c 0 -1.105468 -0.894531 -2 -2 -2 z m 0 0" fill="#4318ff"></path> </g></svg>              </a>
             </Link>
           </div>
           </div>

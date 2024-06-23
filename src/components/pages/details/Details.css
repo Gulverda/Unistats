@@ -1,0 +1,35 @@
+button{
+    padding: 10px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.for_map_button button:hover{
+    color: #4318FF !important;
+    background-color: #DFD8FF !important;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+@media screen and (max-width: 1024px) {
+    .for_map{
+        margin-left: 0px !important;
+    }
+
+    .for_map_flex{
+        flex-direction: column-reverse !important;
+        margin-top: 0 !important;
+    }
+
+    .for_map_button{
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    table{
+        margin-top: -50px !important;
+    }
+}
+  

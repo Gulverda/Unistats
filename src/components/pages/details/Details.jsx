@@ -8,15 +8,15 @@ const universities = [
     { name: "დავით აღმაშენებლის სახელმწიფო თავდაცვის აკადემია", region: "Shida Kartli", url: "https://www.google.com" },
     { name: "იაკობ გოგებაშვილის თელავის სახელმწიფო უნივერსიტეტი", region: "Kakheti", url: "https://www.google.com" },
     { name: "სამცხე-ჯავახეთის სახელმწიფო უნივერსიტეტი", region: "Samtskhe-Javakheti", url: "https://www.google.com" },
-    { name: "კავკასიის უნივერსიტეტი", region: "Ajaria", url: "https://www.google.com" },
-    { name: "გრიგოლ რობაქიძის სახელობის უნივერსიტეტი", region: "Ajaria", url: "https://www.google.com" },
-    { name: "ბათუმის სახელმწიფო საზღვაო აკადემია", region: "Ajaria", url: "https://www.google.com" },
-    { name: "ბათუმის შოთა რუსთაველის სახელმწიფო უნივერსიტეტი", region: "Ajaria", url: "https://www.google.com" },
-    { name: "ბათუმის ხელოვნების სასწავლო უნივერსიტეტი", region: "Ajaria", url: "https://www.google.com" },
-    { name: "ბათუმის ნავიგაციის სასწავლო უნივერსიტეტი", region: "Ajaria", url: "https://www.google.com" },
-    { name: "ბათუმის უმაღლესი საზღვაო საინჟინრო სასწავლებელი ანრი", region: "Ajaria", url: "https://www.google.com" },
-    { name: "ბაუ ინთერნეიშენალ უნივერსითი ბათუმი", region: "Ajaria", url: "https://www.google.com" },
-    { name: "ბათუმის სასწავლო უნივერსიტეტი", region: "Ajaria", url: "https://www.google.com" },
+    { name: "კავკასიის უნივერსიტეტი", region: "Adjara", url: "https://www.google.com" },
+    { name: "გრიგოლ რობაქიძის სახელობის უნივერსიტეტი", region: "Adjara", url: "https://www.google.com" },
+    { name: "ბათუმის სახელმწიფო საზღვაო აკადემია", region: "Adjara", url: "https://www.google.com" },
+    { name: "ბათუმის შოთა რუსთაველის სახელმწიფო უნივერსიტეტი", region: "Adjara", url: "https://www.google.com" },
+    { name: "ბათუმის ხელოვნების სასწავლო უნივერსიტეტი", region: "Adjara", url: "https://www.google.com" },
+    { name: "ბათუმის ნავიგაციის სასწავლო უნივერსიტეტი", region: "Adjara", url: "https://www.google.com" },
+    { name: "ბათუმის უმაღლესი საზღვაო საინჟინრო სასწავლებელი ანრი", region: "Adjara", url: "https://www.google.com" },
+    { name: "ბაუ ინთერნეიშენალ უნივერსითი ბათუმი", region: "Adjara", url: "https://www.google.com" },
+    { name: "ბათუმის სასწავლო უნივერსიტეტი", region: "Adjara", url: "https://www.google.com" },
     { name: "შავი ზღვის საერთაშორისო უნივერსიტეტი", region: "Tbilisi", url: "https://www.google.com" },
     { name: "თბილისის ღია უნივერსიტეტი", region: "Tbilisi", url: "https://www.google.com" },
     { name: "ივანე ჯავახიშვილის სახელობის თბილისის სახელმწიფო უნივერსიტეტი", region: "Tbilisi", url: "https://www.google.com" },
@@ -58,7 +58,7 @@ const regions = [
     "Shida Kartli",
     "Kakheti",
     "Samtskhe-Javakheti",
-    "Ajaria",
+    "Adjara",
     "Tbilisi",
     "Imereti"
 ];
@@ -165,7 +165,7 @@ const Details = () => {
                 
                 <div className="for_map_flex" style={{display: "flex", justifyContent: "space-between", gap: "70px", marginTop: "50px"}}>
                     {/* Table displaying filtered universities */}
-                <table style={{ width: '100%', borderCollapse: 'collapse', }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: '580px' }}>
                     <thead>
                         <tr>
                             <th style={{ border: '1px solid #ddd', padding: '8px', textAlign: 'left' }}>

@@ -39,4 +39,8 @@ button{
     .for_map_display{
         display: none !important;
     }
+
+    table{
+        min-width: 100% !important;
+    }
 }
